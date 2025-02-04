@@ -116,13 +116,13 @@ __name__ == "__main__"
 send_message = SendMessages()
 
 row_index = 0 #índice da linha inicial
-x = 1
+x = 0
 for i in dt.clientes4_df:
 
     send_message.postMessage(x, row_index)
 
-    if x >= 5: #condicional para enviar todas as 5 mensagens pré-estabelecidas
-        x = 1 
+    if x >= 4: #condicional para enviar todas as 5 mensagens pré-estabelecidas
+        x = 0 
     else:
         x+=1
 
